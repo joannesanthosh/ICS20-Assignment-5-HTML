@@ -19,12 +19,28 @@ if (navigator.serviceWorker) {
  */
 function convert() {
   // input
-  const fahrenheit = parseInt(document.getElementById("fahrenheit").value)
+  var integer = parseInt(document.getElementById("integer").value);
+  var pi;
+  var number = 1;
+  var positiveOrNegative = "minus";
 
   // process
-  const celsius = ((fahrenheit - 32) * 5) / 9
+  pi = 4 / number;
+  while (integer > 1) {
+    if (positiveOrNegative == "minus") {
+      number = number + 2;
+      pi = pi - (4 / number); 
+      positiveOrNegative == "plus";
+    } else if (positiveOrNegative == "plus"){
+      number = number + 2;
+      pi = pi + (4 / number); 
+      positiveOrNegative == "minus"
+    }
+    integer = integer - 1;
+  }
+  positiveOrNegative == "minus"
+  number = 1;
 
   // output
-  document.getElementById("celsius").innerHTML =
-    "<p>The  temperature in celsius is: " + celsius.toFixed(2) + "°<p>"
+  document.getElementById("answer").innerHTML = "The answer is: " + pi;
 }
