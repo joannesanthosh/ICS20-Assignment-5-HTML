@@ -30,15 +30,15 @@ function convert() {
     if (positiveOrNegative == "minus") {
       number = number + 2;
       pi = pi - (4 / number); 
-      positiveOrNegative == "plus";
+      positiveOrNegative = "plus";
     } else if (positiveOrNegative == "plus"){
       number = number + 2;
-      pi = pi + (4 / number); 
-      positiveOrNegative == "minus"
+      pi = pi + (4 / number)
+      positiveOrNegative = "minus"
     }
     integer = integer - 1;
   }
-  positiveOrNegative == "minus"
+  positiveOrNegative = "minus"
   number = 1;
 
   // output
