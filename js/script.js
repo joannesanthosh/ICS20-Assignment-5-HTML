@@ -9,13 +9,13 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit6-01-PWA/sw.js", {
-    scope: "/ICS20-Unit6-01-PWA/",
+  navigator.serviceWorker.register("/ICS20-Assignment-5-HTML/sw.js", {
+    scope: "/ICS20-Assignment-5-HTML/",
   })
 }
 
 /**
- * This function converts the degrees from fahrenheit to celsius
+ * This function calculates pi
  */
 function convert() {
   // input
